@@ -55,7 +55,7 @@ export class ReactiveFormFormgroupComponent implements OnInit {
     // })
 
     //!setting/predefining the part/patch of the reactive form
-    this.signUpForm.patchValue({
+    this.signUpForm.patchValue({ 
       'userDataFormGroup': {
         "usernameControl": 'Tejas',
       }
