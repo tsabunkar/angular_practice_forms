@@ -57,8 +57,22 @@
           </div>
           <span *ngIf="!signUpForm.valid && signUpForm.touched"
                 class="help-block">Please enter a valid data in the above form</span>
-          <button class="btn btn-primary" type="submit">Submit</button>
+          <button 
+          class="btn btn-primary"
+          type="submit"
+          [disabled]="!signUpForm.valid"
+          >Submit</button>
         </form>
+      </div>
+    </div>
+    <hr>
+    <h3>Your data submited to form is : </h3>
+    <div class="row" *ngIf="isFormSubmitted">
+      <div class="col-xs-12">
+        <p>username : {{userObj.username}}</p>
+        <p>email : {{userObj.email}}</p>
+        <p>Gender : {{userObj.gender}}</p>
+        <p>hobbies : {{userObj.hobbies}}</p>
       </div>
     </div>
   </div>
