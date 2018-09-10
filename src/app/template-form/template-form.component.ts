@@ -1,13 +1,14 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-template-form',
+  templateUrl: './template-form.component.html',
+  styleUrls: ['./template-form.component.css']
 })
-export class AppComponent {
+export class TemplateFormComponent implements OnInit {
 
+  ngOnInit() { }
 
   /*  onSubmitOfForm(formElement: HTMLFormElement) {
      console.log('form is submitted !');
@@ -78,6 +79,5 @@ export class AppComponent {
     //! whereas patchValue() -> Is to set the part/patch of fields/controls in NgForm Progrmmatically
 
   }
-
 
 }
