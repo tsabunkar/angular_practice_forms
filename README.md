@@ -30,13 +30,22 @@ Angular and forms
 Note - In general wkt, when we submit the form data it will go to backend but page reloads
 but Our Intention for using Angular is bcoz to achieve SPA (No reloading of page)
 
-Angular at backside run an Object is called -
-This Object has  fields like value (which has key value pairs of the form fields), valid, etc
+Angular at backside run an Object is called -> NgForm
+This Object has  fields like value (which has key value pairs of the form fields), valid, controls, dirty,disabled,enabled,errors,control,etc...
 
 Angular has 2 approach for forms
 Template-Driven approach (Angular infers the form Object from the DOM)
 Reactive approach (Form is created programmatically in .ts and synchronized with the DOM)
 
+FormsModule,//FormsModule -> Is for Template-driven approach for FORM Creation
 
+<input 
+      type="text"
+      id="username" 
+      class="form-control"
+      ngModel 
+      name="username"
+            >
+This ngModel tells angular that this input is a control for our Angular form [NgForm] (is callled Registring the control to ANgular Form Object)            
 --------------------------------------------------------------------------------------------------------
 

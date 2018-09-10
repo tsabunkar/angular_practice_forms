@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule,//FormsModule -> Is for Template-driven approach for FORM Creation
     HttpModule
   ],
   providers: [],
